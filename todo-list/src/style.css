@@ -1,0 +1,33 @@
+.wrapper {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.filters {
+    display: flex;
+}
+
+.filters div {
+    border: 1px solid grey;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.list {
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.list-item {
+    display: flex;
+    position: relative;
+}
+
+.list-item__state{
+    margin: 0 10px;
+}
+
+.list-item__action{
+    position: absolute;
+    right: 0;
+}
