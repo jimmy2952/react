@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
+import React , {Component} from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <h1>Job board 職缺報報</h1>
+        <div className='jobs'>
+          <div className='job'>
+            <h2>前端工程師</h2>
+            <p>前端工程師前端工程師前端工程師前端工程師</p>
+            <a href='https://google.com'>我要應徵</a>
+          </div>
+          <div className='job'>
+            <h2>前端工程師</h2>
+            <p>前端工程師前端工程師前端工程師前端工程師</p>
+            <a href='https://google.com'>我要應徵</a>
+          </div>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default App;
