@@ -10,3 +10,7 @@
 .job ~ .job{
   margin-top: 20px;
 }
+
+.job__content{
+  white-space: pre-line;
+}
